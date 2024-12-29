@@ -1,6 +1,6 @@
 export function Hello({ name, age, majeur }) {
   console.log(name, age, majeur);
-  return <h1>Hello {props.name}</h1>;
+  return <h1>Hello {name}</h1>;
 }
 
 export function Greeting() {

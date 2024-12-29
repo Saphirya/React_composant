@@ -1,3 +1,8 @@
-export default function Hello() {
-  return <h1>Hello World</h1>;
+export function Hello({ name, age, majeur }) {
+  console.log(name, age, majeur);
+  return <h1>Hello {props.name}</h1>;
+}
+
+export function Greeting() {
+  return <h2>Greeting !</h2>;
 }

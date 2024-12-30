@@ -1,8 +1,16 @@
-export function Hello({ name, age, majeur }) {
-  console.log(name, age, majeur);
-  return <h1>Hello {name}</h1>;
+export function Greeting({ name, age }) {
+  return (
+    <h2>
+      Greeting {name} ! Vous avez {age} ans
+    </h2>
+  );
 }
 
-export function Greeting() {
-  return <h2>Greeting !</h2>;
+export default function Hello({ children }) {
+  return (
+    <>
+      <h1>Hello World !</h1>
+      {children}
+    </>
+  );
 }
